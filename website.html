@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+    #banner{ position: relative;}
+    #banner .banner_list{ width:100%; height:469px; position: relative;}
+    #banner .banner_list li{ width:100%; height:100%; background:center 0 no-repeat; position: absolute; le
+    0; top:0; opacity: 0; z-index: 1;}
+    #banner .banner_list li.active{ opacity: 1; z-index: 10;}
+    #banner .banner_list a{ display: block; width:100%; height:100%;}
+    #banner .banner_btn{ width:100%; position: absolute; bottom: 19px; z-index: 20; font-size:0; text-align: center;}
+    #banner .banner_btn li{ display: inline-block; width:12px; height:12px; border:2px solid black; border-radius: 50%; box-sizing: border-box; margin:0 6px; cursor: pointer;}
+    #banner .banner_btn li.active{ background:black;}
+
+    #service{ overflow: hidden; min-height:407px;}
+    #service .service_list{ text-align:center; margin-top: 34px;}
+    #service .service_list li{ float:left; width:250px; margin:0 10px;}
+    #service .service_list div{ width:102px; height:102px; margin:0 auto;}
+    #service .service_list li:nth-of-type(1) div{ background-image: url(./images/web1.png);}
+    #service .service_list li:nth-of-type(2) div{ background-image: url(./images/mail1.png);}
+    #service .service_list li:nth-of-type(3) div{ background-image: url(./images/graphic1.png);}
+    #service .service_list li:nth-of-type(4) div{ background-image: url(./images/e-bussiness1.png);}
+    #service .service_list h3{ font-size:18px; color:#434343; line-height: 36px; margin-top:25px;}
+    #service .service_list p{ font-size:14px; color:#6D6D6D; line-height: 22px;}
+
+    #case{ background:white;}
+    #case .container{ min-height: 460px; overflow: hidden;color:black;}
+    #case .area_title{ margin-top:55px;}
+    #case .area_title h2{ color:#66C5B4;}
+    #case .case_list{ margin-top:28px;}
+    #case .case_list li{ float:left; width:340px; margin: 0 10px;}
+    #case .case_btn{ width:176px; height:37px; background:#66C5B4; margin:0 auto; border-radius: 25px; line-height: 37px; text-align: center; font-size:14px; margin-top: 36px;}
+    #case .case_btn a{ display: block; width:100%; height:100%; color:black;}
+
+    #news{ min-height:450px; overflow: hidden;}
+    #news .area_title{ margin-top:65px;}
+    #news dl{ margin-top:48px;}
+    #news dt{ width:234px;}
+    #news dd{ width:846px;}
+    #news .news_list{ width:100%;}
+    #news .news_list li{ width:50%; float: left; margin-bottom: 48px;}
+    #news .news_date{ width:71px; height:70px; border-right:1px solid black; text-align: center;}
+    #news .news_date i{ color:#66C5B4; font-size:39px; display:block; font-weight: bold;}
+    #news .news_date span{ color:#999999; font-size:20px; line-height: 36px;}
+    #news .news_text{ width:310px; margin-left:20px;}
+    #news .news_text h3{ font-size:14px;}
+    #news .news_text h3 a{ color:#3F3F3F;}
+    #news .news_text p{ color:#A4A4A4; font-size:12px; line-height: 21px; margin-top:17px;}
+    </style>
+</head>
+<body>
+    <div id="head" class="container">
+        <div class="head_logo l">
+            <a href="#">
+                <img src="./images/QQ图片20200217214114.jpg" alt="程序员小舟" title="程序员小舟">
+            </a>
+        </div>
+        <ul class="head_menu r">
+            <li>
+                <a href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#">ABOUT</a>
+            </li>
+            <li>
+                <a href="#">PROTFOLIO</a>
+            </li>
+            <li>
+                <a href="#">SERVICE</a>
+            </li>
+            <li>
+                <a href="#">NEWS</a>
+            </li>
+            <li>
+                <a href="#">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+    <div id="banner" class="container-fluid">
+        <ul class="banner_list">
+            <li class="active" style="background-image:url(./images/psc.jpg)">
+                <a href="#"></a>
+            </li>
+            <li style="background-image:url(./images/banner.png)">
+                <a href="#"></a>
+            </li>
+            <li style="background-image:url(./images/banner.png)">
+                <a href="#"></a>
+            </li>
+            <li style="background-image:url(./images/banner.png)">
+                <a href="#"></a>
+            </li>
+        </ul>
+        <ol class="banner_btn">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <div id="service" class="container">
+        <div class="area_title">
+            <h2>网络安全</h2>
+            <p>CYBER SECURITY</p>
+        </div>
+        <ul class="service_list">
+            <li>
+                <div></div>
+                <h3>Penetration test</h3>
+                <p>
+                    渗透测试/web安全测试
+                    <br>
+                    web socket
+                </p>
+            </li>
+            <li>
+                <div></div>
+                <h3>Program security</h3>
+                <p>
+                    定制专业的安全服务/解决你开发程序的安全问题
+                    <br>
+                    win32api
+                </p>
+            </li>
+            <li>
+                <div></div>
+                <h3>Operation and maintenance</h3>
+                <p>
+                    运营维护/网络的专业维护                    
+                    <br>
+                      LINUX
+                </p>
+            </li>
+            <li>
+                <div></div>
+                <h3>WEB SECURITY</h3>
+                <p>
+                    web安全/专业的代码工程师帮你查找代码漏洞
+                    <br>
+                    xss、crsf、sql、
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div id="case" class="container-fluid">
+        <div class="container">
+            <div class="area_title">
+                <h2>{ 客户案例 }</h2>
+                <p>With the best professional technology, to design the best innovative web site</p>
+            </div>
+            <ul class="case_list clear">
+                <li>
+                    <a href="#"><img src="./images/psb-(1).jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/psb.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/psb-(2).jpg" alt=""></a>
+                </li>
+            </ul>
+            <div class="case_btn">
+                <a href="#">VIEW MORE</a>
+            </div>
+        </div>
+    </div>
+    <div id="news" class="container">
+        <div class="area_title">
+            <h2>最新资讯</h2>
+            <p>TEH LATEST NEWS</p>
+        </div>
+        <dl>
+            <dt class="l">
+                <img src="./images/QQ图片20200313193313.jpg" alt="">
+            </dt>
+            <dd class="l">
+                <ul class="news_list">
+                    <li>
+                        <div class="news_date l">
+                            <i>09</i>
+                            <span>Jan</span>
+                        </div>
+                        <div class="news_text l">
+                            <h3><a href="#">网络安全的需要重视吗</a></h3>
+                            <p>网络安全是指网络系统的硬件、软件及其系统中的数据受到保护，
+                                不因偶然的或者恶意的原因而遭受到破坏    
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_date l">
+                            <i>09</i>
+                            <span>Jan</span>
+                        </div>
+                        <div class="news_text l">
+                            <h3><a href="#">web安全设计的领域</a></h3>
+                            <p>业务的迅速发展也引起黑客们的强烈关注，
+                                接踵而至的就是Web安全威胁的凸显
+                                </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_date l">
+                            <i>09</i>
+                            <span>Jan</span>
+                        </div>
+                        <div class="news_text l">
+                            <h3><a href="#">企业安全如何假设</a></h3>
+                            <p>一般有客户在企业经常遭受企业竞争，
+                                从而发生了一系列安全问题...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="news_date l">
+                            <i>09</i>
+                            <span>Jan</span>
+                        </div>
+                        <div class="news_text l">
+                            <h3><a href="#">逆向工程</a></h3>
+                            <p>通过逆向工程我们可以做到病毒查找
+                                我们可以从逆向过后中的代码寻找病毒...</p>
+                        </div>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <div id="foot" class="container-fluid">
+        <div class="container">
+            <p class="l">Copyright 2020- 2030 program xiaozhou Culture All Rights Reserved</p>
+            <div class="r">
+                <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Portfolio</a> | <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
