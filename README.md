@@ -1,4 +1,5 @@
 web
-this is a Webpage and commodity the buys
-the in her you can buys the security commodity
-you can according to myself Choice buys commodity
+
+this is a Webpage and commodity the buys.
+the in her you can buys the security commodity.
+you can according to myself Choice buys commodity.
